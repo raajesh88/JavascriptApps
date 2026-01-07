@@ -1,0 +1,25 @@
+var empid=2001;
+console.log(typeof(empid));
+var empsal=49999.50;
+console.log(typeof(empsal));
+var emobile=98784774474;
+console.log(typeof(emobile));
+var ename="akshay";
+console.log(typeof(ename));
+var pemp = false;
+console.log(typeof(pemp));
+var pf=null;
+console.log(typeof(pf));
+var esi;
+console.log(typeof(esi));
+var empdesg=["hr","developer","manager"];
+console.log(typeof(empdesg));
+var customerinfo = {cid:1001,cname:"pravi",cadd:"tenali"};
+console.log(typeof(customerinfo));
+//ES-6 New data types
+var tcsturnover=BigInt(123456789012345678901234567890);
+console.log(typeof(tcsturnover));
+var pname=Symbol("realme");
+console.log(typeof(productname));
+var pname1=Symbol("realme");
+console.log(pname==pname1);

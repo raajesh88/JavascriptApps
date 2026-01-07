@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <script src="validate.js">  </script>
+</head>
+<body><center>
+    <h2 >Please signup here!</h2>
+    <form action="success.html" onsubmit="return validate()">
+      <label> Enter Username: </label>
+      <input type="text" name="username" id="usernamee" />
+      <br />
+      <br />
+      <label> Enter Password:  </label>
+      <input type="password" name="password" id="pswd" required />
+      <br />
+      <br />
+      
+      <label> Confirm Password: </label>
+      <input type="password" name="password" id="cnfrmpswd" />
+      <br>
+      <br>
+      <label> Enter DOB: </label>
+      <input type="text" name="date of birth" id="dob" pattern="\d{4}-\d{2}-\d{2}" />
+      <br>
+      <br>
+     <label for="qualification">Qualification</label>
+<select id="qualification" name="qualification" required>
+  <option value="" disabled selected>-- Select Qualification --</option>
+  <option value="10th">10th Standard</option>
+  <option value="12th">12th Standard</option>
+  <option value="diploma">Diploma</option>
+  <option value="graduate">Graduate (Bachelor’s)</option>
+  <option value="postgraduate">Post Graduate (Master’s)</option>
+  <option value="phd">PhD / Doctorate</option>
+  <option value="other">Other</option>
+</select>
+<br><br>
+<label>Skills</label>
+<select id="Skills" name="Skills" required>
+  <option value="" disabled selected>-- Select your skills --</option>
+  <option value="html"></option>html</option>
+  <option value="css">css</option>
+  <option value="java script">javascript</option>
+  <option value="java">java</option>
+  <option value="python">python</option>
+  <option value="c++">c++</option>
+  <option value="c">C</option>
+</select>
+<br><br>
+      <label> E-mail: </label>
+      <input type="email" name="email" id="email" required>
+      <br>
+      <br>
+      <label> Select gender:  required</label>
+      <input type="radio" name="gender" id="male" />Male
+    <input type="radio" name="gender" id="male" />Female
+      <br>
+      <br>
+      <label> Mobile Number</label>
+      <input type="tel" name="" id="phnno"/>
+      <br>
+      <br>
+      Address:
+      <textarea id ="address" rows="5" columns="4" > </textarea> 
+       <br><br>
+       <label>Preferred Shift </label>
+
+<label><input type="checkbox" name="shift" value="Day Shift"> Morning Shift</label>
+<label><input type="checkbox" name="shift" value="Night Shift"> Afternoon Shift</label><br><br>
+<button value="register" >Register</button>
+   <button value="reset" >Reset</button>
+   </form> <br><br>
+  </center>
+</body>
+</html>
